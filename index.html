@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,
+    900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,
+    wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:
+    wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Clinic Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="clinic-name">
+                <h1>MedClinic</h1>
+            </div>
+            <div class="social-media-icons">
+                <a href="#" class="social-icon" title="Facebook">
+                    <img src="images/fb.png" alt="Facebook">
+                </a>
+                <a href="#" class="social-icon" title="Instagram">
+                    <img src="images/insta.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="contact-info">
+                <p>Contact: | Email: </p>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                &#9776;
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul id="nav-links">  
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="services.html" class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="#">Service 1</a>
+                    <a href="#">Service 2</a>
+                    <a href="#">Service 3</a>
+                </div>
+            </li>
+            <li><a href="providers.html">Providers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>             
+    </nav>
+
+    <main>
+        <h2>Welcome to Our Clinic</h2>
+        <p>Placeholder</p>
+    </main>
+
+    <section id="book-appointment">
+        <h2>Book an Appointment:</h2>
+        
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="reason">Reason for Visit:</label>
+            <textarea id="reason" name="reason" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Clinic Name | All Rights Reserved - batangamers</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
